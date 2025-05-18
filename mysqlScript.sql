@@ -1,3 +1,4 @@
+CREATE DATABASE EventManagementSystem;
 use EventManagementSystem;
 
 CREATE TABLE USERS (
