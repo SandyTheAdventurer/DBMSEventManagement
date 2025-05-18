@@ -2,11 +2,6 @@ import gradio as gr
 import mysql.connector
 import pandas as pd
 from datetime import datetime
-import os
-from dotenv import load_dotenv
-
-load_dotenv()
-
 CURRENT_USER_ID = "U001"
 
 def get_db_connection():
