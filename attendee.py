@@ -9,7 +9,7 @@ def get_db_connection():
         conn = mysql.connector.connect(
             host="localhost",
             user="root",
-            password="1029384756",
+            password="123456",
             database="EventManagementSystem"
         )
         return conn
