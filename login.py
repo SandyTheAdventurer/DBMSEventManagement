@@ -17,7 +17,7 @@ with gr.Blocks() as login:
     login_btn = gr.Button("Login")
     signup_menu = gr.Button("Create account", size = "sm")
 
-    login_btn.click(fn = login_fn, inputs = [login_mail, login_passwd, login_type], outputs= gr.Info())
+    login_btn.click(fn = login_fn, inputs = [login_mail, login_passwd, login_type], outputs= gr.Info(), js="() => window.location.href = 'http://localhost:6002'")
     signup_menu.click(fn = create_account, inputs = [login_mail, login_passwd, login_type], outputs = gr.Info())
 
-login.launch()
+login.launch(server_port=6001)
